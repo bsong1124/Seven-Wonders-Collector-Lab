@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Seven Wonders of the World</h1>
+
+{% for w in wonders %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ w.name }}</span>
+      <p>Country: {{ w.country }}</p>
+    </div>
+  </div>
+{% endfor %}
+{% endblock %}
