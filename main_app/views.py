@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 from .models import Wonder
 
 # wonders = [
@@ -11,7 +10,7 @@ from .models import Wonder
 #     {'name': 'Taj Mahal', 'country': 'India'}, 'AD 1643'
 #     {'name': 'The Colosseum', 'country': 'Italy'},  'AD 80'
 #]
-w = Wonder(name='The Colosseum', country= 'Italy', year_built='AD 80')
+
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
