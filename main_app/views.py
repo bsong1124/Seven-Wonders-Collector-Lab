@@ -11,7 +11,7 @@ from .models import Wonder
 #     {'name': 'Taj Mahal', 'country': 'India'}, 'AD 1643'
 #     {'name': 'The Colosseum', 'country': 'Italy'},  'AD 80'
 #]
-w = Wonder(name='Chicken Itza', country= 'Mexico', year_built='AD 600')
+w = Wonder(name='The Colosseum', country= 'Italy', year_built='AD 80')
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
@@ -23,4 +23,10 @@ def wonders_index(request):
     wonders = Wonder.objects.all()
     return render(request, 'wonders/index.html',{
         'wonders': wonders
+    })
+
+def wonders_details(request, wonders_id):
+    wonder = Wonder.Objects.get(id=wonders_id)
+    return render(request, 'wonders/details.html', {
+        'wonder': wonder
     })
