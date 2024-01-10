@@ -26,7 +26,7 @@ def wonders_index(request):
     })
 
 def wonders_details(request, wonder_id):
-    wonder = Wonder.Objects.get(id=wonder_id)
+    wonder = Wonder.objects.get(id=wonder_id)
     return render(request, 'wonders/details.html', {
         'wonder': wonder
     })
