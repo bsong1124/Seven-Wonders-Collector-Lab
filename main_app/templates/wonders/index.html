@@ -5,10 +5,13 @@
 
 {% for w in wonders %}
   <div class="card">
+    <a href="{% url 'detail' w.id %}">
     <div class="card-content">
       <span class="card-title">{{ w.name }}</span>
       <p>Country: {{ w.country }}</p>
+      <p>Year Built: {{w.year_built}}</p>
     </div>
+    </a>
   </div>
 {% endfor %}
 {% endblock %}

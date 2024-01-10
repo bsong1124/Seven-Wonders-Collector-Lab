@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ wonder.name }}</span>
+      <p>Country: {{ wonder.country }}</p>
+      <p>Year Built: {{wonder.year_built}}</p>
+    </div>
+  </div>
+{% endblock %}
