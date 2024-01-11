@@ -37,7 +37,7 @@ class WonderCreate(CreateView):
 
 class WonderUpdate(UpdateView):
     model = Wonder
-    fields = ['country', 'year_built']
+    fields = '__all__'
 
 class WonderDelete(DeleteView):
     model = Wonder
