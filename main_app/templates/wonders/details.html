@@ -7,6 +7,10 @@
       <p>Country: {{ wonder.country }}</p>
       <p>Year Built: {{wonder.year_built}}</p>
     </div>
+    <div class="card-action">
+      <a href="{%url 'wonder_update' wonder.id%}">Edit {{wonder.name}}</a>
+      <a href="{%url 'wonder_delete' wonder.id%}">Delete {{wonder.name}}</a>
+    </div>
   </div>
 
 {% endblock %}
