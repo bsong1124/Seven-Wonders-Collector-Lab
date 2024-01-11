@@ -2,16 +2,6 @@ from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Wonder
 
-# wonders = [
-#     {'name': 'Great Wall of China', 'country': 'China'}, '700 BC'
-#     {'name': 'Chichen Itza', 'country': 'Mexico'}, 'AD 600'
-#     {'name': 'Petra', 'country': 'Jordan'}, "312 BC"
-#     {'name': 'Machu Picchu', 'country': 'Peru'}, 'AD 1450'
-#     {'name': 'Christ the Redeemer', 'country': 'Brazil'}, 'AD 1931'
-#     {'name': 'Taj Mahal', 'country': 'India'}, 'AD 1643'
-#     {'name': 'The Colosseum', 'country': 'Italy'},  'AD 80'
-#]
-
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
